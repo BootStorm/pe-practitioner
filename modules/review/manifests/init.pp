@@ -2,6 +2,10 @@ class review (
   $user = 'review'
 ) {
 
+  package { 'csh':
+    ensure => present,
+  }
+
   file { '/etc/shells':
     ensure => file,
     owner  => 'root',
