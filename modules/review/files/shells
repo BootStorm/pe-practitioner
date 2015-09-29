@@ -1,0 +1,7 @@
+# Managed by Puppet yo
+/bin/sh
+/bin/bash
+/sbin/nologin
+/usr/bin/sh
+/usr/bin/bash
+/usr/sbin/nologin
