@@ -8,3 +8,5 @@ class homedir::homedir {
 
 }
 
+include homedir::homedir
+

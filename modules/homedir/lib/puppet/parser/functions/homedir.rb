@@ -3,8 +3,7 @@ module Puppet::Parser::Functions
   newfunction(:homedir,
               :type => :rvalue,
               :arity => 1
-             )
-  do |args|
+             ) do |args|
     username = args[0]
     case username
     when 'root'
