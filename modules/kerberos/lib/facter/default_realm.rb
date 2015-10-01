@@ -5,7 +5,7 @@ Facter.add('default_realm') do
   setcode do
     require 'augeas'
     Augeas::open do |aug|
-      aug.get('/files/etc/krb5.con/libdefaults/default_realm')
+      aug.get('/files/etc/krb5.conf/libdefaults/default_realm')
     end
   end
 end
