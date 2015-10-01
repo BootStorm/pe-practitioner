@@ -1,5 +1,9 @@
 class hosts {
 
+  package { 'pe-puppetdb--termini':
+    ensure => installed,
+  }
+
   Host {
     ensure => present,
     target => '/etc/hosts',
