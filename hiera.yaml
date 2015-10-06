@@ -1,0 +1,13 @@
+---
+:backends:
+  - yaml
+
+:yaml:
+  :datadir: /root/puppetcode/hieradata
+
+:hierarchy:
+  - "hosts/%{clientcert}"
+  - "env/%{environment}"
+  - defaults
+
+
