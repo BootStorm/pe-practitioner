@@ -40,7 +40,9 @@ node default {
   # Example:
   #   class { 'my_class': }
 
-  notify(hiera("message"))
+  $my_msg = hiera("message")
+  notify{"${my_msg}":}
+
 
 }
 
